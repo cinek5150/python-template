@@ -19,14 +19,16 @@ DEV_REQUIREMENTS = [
     'twine == 4.*',
 ]
 
+long_description = ''
+
 setuptools.setup(
-    name='PROJECT_NAME_URL',
-    version='0.1.0',
-    description='Your project description here',
+    name='100-movies-to-watch',
+    version='1.0.0',
+    description='Script generating txt file with list of 100 movies from empireonline.com',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='http://github.com/USERNAME/PROJECT_NAME_URL',
-    author='USERNAME',
+    url='http://github.com/cinek5150/100-movies-to-watch',
+    author='cinek5150',
     license='MIT',
     packages=setuptools.find_packages(
         exclude=[
@@ -35,7 +37,7 @@ setuptools.setup(
         ]
     ),
     package_data={
-        'PROJECT_NAME_URL': [
+        '100-movies-to-watch': [
             'py.typed',
         ]
     },
@@ -50,7 +52,7 @@ setuptools.setup(
     },
     entry_points={
         'console_scripts': [
-            'PROJECT_NAME_URL=project_name.my_module:main',
+            '100-movies-to-watch=hundred_movies_to_watch.my_module:main',
         ]
     },
     python_requires='>=3.7, <4',
