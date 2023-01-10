@@ -4,8 +4,10 @@ from bs4 import BeautifulSoup
 
 class HundredMoviesToWatch:
     def __init__(self):
-        self.URL = "https://web.archive.org/web/20200518073855/https://www.empireonline.com/movies/features/best" \
-                   "-movies-2/"
+        self.URL = (
+            "https://web.archive.org/web/20200518073855/"
+            "https://www.empireonline.com/movies/features/best-movies-2/"
+        )
 
     def make_soup(self):
         rspns = requests.get(self.URL).text
